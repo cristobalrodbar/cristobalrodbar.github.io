@@ -263,3 +263,14 @@
   transition: none !important; }
 
 
+/* Estado por defecto: Oculto */
+.contenido-oculto {
+  max-height: 0; /* Lo más importante para ocultar */
+  overflow: hidden; /* Oculta cualquier cosa que se desborde al colapsar */
+  transition: max-height 0.3s ease-out; /* Animación de colapso */
+}
+
+/* Estado al hacer clic: Mostrar */
+.contenido-oculto.mostrar {
+  max-height: 3000px; /* Un valor lo suficientemente grande para mostrar todo el contenido */
+}

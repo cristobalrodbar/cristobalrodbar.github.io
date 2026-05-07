@@ -274,3 +274,58 @@
 .contenido-oculto.mostrar {
   max-height: 3000px; /* Un valor lo suficientemente grande para mostrar todo el contenido */
 }
+
+
+.collage-section{
+  padding: 3rem 0;
+}
+
+.collage-grid{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.collage-item{
+  grid-column: span 4;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: transparent;
+}
+
+.collage-item--wide{
+  grid-column: span 8;
+  aspect-ratio: 2 / 1;
+}
+
+.collage-item--tall{
+  grid-column: span 4;
+  aspect-ratio: 1 / 1.35;
+}
+
+.collage-item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+   object-fit: cover;
+  object-position: center;
+  background: transparent;
+}
+
+@media (max-width: 991.98px){
+  .collage-item,
+  .collage-item--wide,
+  .collage-item--tall{
+    grid-column: span 6;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 575.98px){
+  .collage-item,
+  .collage-item--wide,
+  .collage-item--tall{
+    grid-column: span 12;
+  }
+}

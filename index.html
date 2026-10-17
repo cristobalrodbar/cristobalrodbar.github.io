@@ -6,21 +6,39 @@
     <title>Cristóbal Rodríguez | Desarrollador Móvil & AR</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans leading-relaxed">
+<!-- Navegación -->
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-4 sm:flex-row sm:justify-between sm:px-6">
 
-    <!-- Navegación -->
-    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold text-slate-200 font-mono tracking-tight">&lt;cristobalrodbar/&gt;</span>
-            <div class="space-x-6 text-sm font-medium text-slate-400">
-                <a href="#inicio" class="hover:text-slate-100 transition">Inicio</a>
-                <a href="#sobre-mi" class="hover:text-slate-100 transition">Sobre mí</a>
-                <a href="#proyectos" class="hover:text-slate-100 transition">Proyectos</a>
-                <a href="#contacto" class="hover:text-slate-100 transition">Contacto</a>
-            </div>
+        <!-- Nombre -->
+        <a
+            href="#inicio"
+            class="shrink-0 whitespace-nowrap font-mono text-lg font-bold tracking-tight text-slate-200 sm:text-xl"
+        >
+            cristobalrodbar
+        </a>
+
+        <!-- Enlaces -->
+        <div class="flex items-center justify-center gap-5 whitespace-nowrap text-xs font-medium text-slate-400 sm:gap-6 sm:text-sm">
+            <a href="#inicio" class="transition-colors hover:text-slate-100">
+                Inicio
+            </a>
+            <a href="#sobre-mi" class="transition-colors hover:text-slate-100">
+                Sobre mí
+            </a>
+            <a href="#proyectos" class="transition-colors hover:text-slate-100">
+                Proyectos
+            </a>
+            <a href="#contacto" class="transition-colors hover:text-slate-100">
+                Contacto
+            </a>
         </div>
-    </nav>
+
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="inicio" class="min-h-screen flex items-center pt-20 px-6">
